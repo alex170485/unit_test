@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const fruit = ['Яблоко', 'груша', 'Помидор']
+    const [Apple,,Tomato] = fruit
+    console.log(Apple, Tomato)
+
+    let user = {};
+    [user.name, user.surname] = "Ilya Kantor".split(' ');
+    console.log(user.name);
+    const[App, Tom, ...rest] = ['Яблоко', 'Помидор', 'Груша', 'Арбуз']
+    console.log(...rest)
+
+    // let user = {
+    //     name: 'John',
+    //     age: 32
+    // }
+    // let {name, age: years, isMerried = false} = user
+    let u = {
+        name: "John",
+        years: 30
+    };
+
+    let {name, years: age, isAdmin = false} = u;
+    console.log(name, age, isAdmin)
+
+
+
+</script>
+
+</body>
+</html>
